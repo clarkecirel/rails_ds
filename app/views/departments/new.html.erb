@@ -1,2 +1,10 @@
-<h1>Departments#new</h1>
-<p>Find me in app/views/departments/new.html.erb</p>
+<h1>Add a new Department</h1>
+
+<%= form_for @department do |d| %>
+
+  <%= d.label :name %>
+  <%= d.text_field :name %><br>
+
+  <%= d.submit %>
+  <% end %>
+

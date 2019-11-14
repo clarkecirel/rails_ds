@@ -1,2 +1,9 @@
-<h1>Departments#edit</h1>
-<p>Find me in app/views/departments/edit.html.erb</p>
+<h1>Edit a Department</h1>
+
+<%= form_for @department do |d| %>
+
+  <%= d.label :name %>
+  <%= d.text_field :name %><br>
+
+  <%= d.submit %>
+  <% end %>

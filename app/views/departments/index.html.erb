@@ -1,2 +1,14 @@
-<h1>Departments#index</h1>
-<p>Find me in app/views/departments/index.html.erb</p>
+<h1>Departments</h1>
+
+<p><%= link_to 'Add A New Department', new_department_path %></p>
+
+<h2> List of Departments: </h2>
+
+<ol>
+<% @departments.each do |department| %>
+<li>
+<h2><%= department.name %></h2>
+<%= link_to 'Show Department', department_path(department)%>
+
+
+<% end %>
